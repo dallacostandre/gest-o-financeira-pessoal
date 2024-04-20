@@ -190,6 +190,18 @@
                                         <option value="vestuario"
                                             {{ isset($transacao) && $transacao->categoria === 'vestuario' ? 'selected' : '' }}>
                                             Vestuário</option>
+                                        <option value="emprestimo"
+                                            {{ isset($transacao) && $transacao->categoria === 'emprestimo' ? 'selected' : '' }}>
+                                            Empréstimo Banco</option>
+                                        <option value="telefonia"
+                                            {{ isset($transacao) && $transacao->categoria === 'telefonia' ? 'selected' : '' }}>
+                                            Telefonia</option>
+                                        <option value="emprestimo-familiar"
+                                            {{ isset($transacao) && $transacao->categoria === 'emprestimo-familiar' ? 'selected' : '' }}>
+                                            Empréstimo Familiar</option>
+                                        <option value="cartao-de-credito"
+                                            {{ isset($transacao) && $transacao->categoria === 'cartao-de-credito' ? 'selected' : '' }}>
+                                            Cartão de Crédito</option>
                                         <option value="outras"
                                             {{ isset($transacao) && $transacao->categoria === 'outras' ? 'selected' : '' }}>
                                             Outras</option>
@@ -242,9 +254,11 @@
                                 <label for="receita_despesa" class="col-sm-2 col-form-label">Categoria</label>
                                 <div class="col-sm-10">
                                     <select name="receita_despesa" class="form-select" id="receita_despesa" required>
-                                        <option value="01" {{ isset($transacao) && $transacao->receita_despesa === 01 ? 'selected' : '' }}>
+                                        <option value="01"
+                                            {{ isset($transacao) && $transacao->receita_despesa === 01 ? 'selected' : '' }}>
                                             Receita</option>
-                                        <option value="02" {{ isset($transacao) && $transacao->receita_despesa === 02 ? 'selected' : '' }}>
+                                        <option value="02"
+                                            {{ isset($transacao) && $transacao->receita_despesa === 02 ? 'selected' : '' }}>
                                             Despesa</option>
                                     </select>
                                 </div>
