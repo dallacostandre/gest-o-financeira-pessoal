@@ -24,7 +24,7 @@ class DashboardController extends Controller
         $dataFimMes = Carbon::now()->endOfMonth();
 
         // Seleciona todas as transações
-        $lancamentos = Transacoes::whereBetween('vencimento', [$dataInicioMes, $dataFimMes])->get();
+        $lancamentos = Transacoes::whereBetween('vencimento', [$dataInicioMes, $dataFimMes])->orderBy('status', 'DESC')->get();
 
         // Calcula o total de entradas e saídas diretamente na consulta
         $totalEntrada = Transacoes::where('receita_despesa', '01')->whereBetween('vencimento', [$dataInicioMes, $dataFimMes])->sum('valor');
