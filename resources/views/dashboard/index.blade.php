@@ -119,7 +119,8 @@
                                             {{ number_format($totalFalta, 2, ',', '.') }}
                                         </h5>
                                         <p class="mb-0" style="font-size: 12px">
-                                            *mês atual
+                                            *mês atual - <span data-toggle="modal" data-target="#modalDetalhes2"><a
+                                                    href="#"> Outras</a></span>
                                         </p>
                                     </div>
                                 </div>
@@ -314,9 +315,9 @@
                         </div>
                         <div class="modal-body">
                             <ul>
-                                <li>Mei André</li>
-                                <li>Positivo Débora</li>
-                                <li>Nubank Débora</li>
+                                <li>Mei André - R$ 600,00</li>
+                                <li>Positivo Débora - R$ </li>
+                                <li>Nubank Débora - R$ 3.000,00</li>
                             </ul>
                         </div>
                         <div class="modal-footer">

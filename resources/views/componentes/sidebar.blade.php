@@ -18,12 +18,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span class="nav-link-text ms-1">Relatório</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="nav-link-text ms-1" data-toggle="modal" data-target="#modalDetalhes2">Dívidas<span>
+                    <span class="nav-link-text ms-1">Relatórios</span>
                 </a>
             </li>
             <li class="nav-item">
@@ -34,4 +29,3 @@
         </ul>
     </div>
 </aside>
-
