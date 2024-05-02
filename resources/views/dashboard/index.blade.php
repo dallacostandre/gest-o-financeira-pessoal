@@ -217,7 +217,13 @@
                                             <td class="align-middle text-sm">
                                                 <div class="ms-4">
                                                     <p class="text-xs font-weight-bold mb-0">
-                                                        {{ \Carbon\Carbon::parse($lancamento->pagamento)->format('d/m/Y') }}
+                                                        @if ($lancamento->status === 01)
+                                                            {{ \Carbon\Carbon::parse($lancamento->pagamento)->format('d/m/Y') }}
+                                                        @else
+                                                            -
+                                                        @endif
+                                                    </p>
+
                                                 </div>
                                             </td>
                                             <td class="align-middle text-sm">
