@@ -191,7 +191,7 @@
                                             <td class="w-20">
                                                 <div class="ms-4">
                                                     <p class="text-xs font-weight-bold mb-0">
-                                                        <strong>{{ $lancamento->descricao }}<strong>
+                                                        <strong>{{ strtoupper($lancamento->descricao) }}</strong>
                                                     </p>
                                                 </div>
                                             </td>
@@ -306,10 +306,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
             <footer class="footer pt-3 fixed-top">
                 <div class="container col-8 position-fixed top-0 end-0">
                     <!-- Exibindo o tooltip se houver uma mensagem de sucesso -->
