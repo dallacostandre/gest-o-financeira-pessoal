@@ -19,6 +19,13 @@
     <link href="{{ asset('/assets/css/nucleo-svg.css') }}" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="{{ asset('/assets/css/argon-dashboard.css?v=2.0.4') }}" rel="stylesheet" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript (popper.js é necessário para modais) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     <style>
         .custom-tooltip {
             max-width: 500px;
@@ -88,11 +95,13 @@
                                             {{ number_format($totalSaida, 2, ',', '.') }}
                                         </h5>
                                         <p class="mb-0" style="font-size: 12px">
-                                            *mês atual
+                                            *mês atual - <span data-toggle="modal" data-target="#modalDetalhes"><a
+                                                    href="#"> Despesas</a></span>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="col-4 text-end">
+
                                     <div
                                         class="icon icon-shape bg-gradient-danger shadow-danger text-center rounded-circle">
                                         <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
@@ -265,6 +274,39 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalDetalhes" tabindex="-1" role="dialog"
+                aria-labelledby="modalDetalhesLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalDetalhesLabel">Despesas Fixas e Variáveis</h5>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Empréstimo Itaú</li>
+                                <li>Aluguel Apartamento</li>
+                                <li>Creche</li>
+                                <li>Condomínio</li>
+                                <li>Rosa - Colchão</li>
+                                <li>Supergás Brás</li>
+                                <li>Cartão de Crédito Itaú - Click</li>
+                                <li>Sem Parar</li>
+                                <li>Vivo - Celulares</li>
+                                <li>Luz - Copel</li>
+                                <li>Seguro Saúde</li>
+                                <li>Internet (Oi)</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
 
             <footer class="footer pt-3 fixed-top">
