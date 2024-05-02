@@ -108,7 +108,7 @@
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Falta</p>
+                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Pendências</p>
                                         <h5 class="font-weight-bolder">
                                             {{ number_format($totalFalta, 2, ',', '.') }}
                                         </h5>
@@ -233,7 +233,7 @@
                                                     @endif
                                                 </div>
                                             </td>
-                                            <td class="align-center text-sm">
+                                            <td class="align-center text-sm col-1">
                                                 <div class="btn-group" role="group" aria-label="Editar e Excluir">
                                                     <a type="button" class="btn btn-primary btn-sm"
                                                         href="{{ route('transacoes.edit', $lancamento->id) }}">

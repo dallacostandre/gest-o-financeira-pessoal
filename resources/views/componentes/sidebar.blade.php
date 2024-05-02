@@ -22,6 +22,11 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="nav-link-text ms-1">Dívidas</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link " href="{{ route('transacoes.create') }}">
                     <span class="nav-link-text ms-1"> + Adicionar Lançamento</span>
                 </a>

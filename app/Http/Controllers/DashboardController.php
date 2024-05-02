@@ -25,10 +25,11 @@ class DashboardController extends Controller
 
         // Seleciona todas as transações
         $lancamentos = Transacoes::where(function ($query) use ($dataInicioMes, $dataFimMes) {
-            $query->whereBetween('vencimento', [$dataInicioMes, $dataFimMes])
-                ->orWhere('status', 'pendente');
+            // Condição para transações com status pendente
+            $query->where('status', '02')
+                ->orWhereBetween('vencimento', [$dataInicioMes, $dataFimMes]);
         })
-            ->orderBy('vencimento')
+            ->orderBy('status', 'DESC')
             ->get();
 
         // Calcula o total de entradas e saídas diretamente na consulta
