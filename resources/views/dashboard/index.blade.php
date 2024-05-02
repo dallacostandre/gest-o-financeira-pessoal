@@ -303,6 +303,29 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalDetalhes2" tabindex="-1" role="dialog"
+                aria-labelledby="modalDetalhesLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalDetalhesLabel">Despesas Fixas e Variáveis</h5>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li>Mei André</li>
+                                <li>Positivo Débora</li>
+                                <li>Nubank Débora</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <footer class="footer pt-3 fixed-top">
                 <div class="container col-8 position-fixed top-0 end-0">
                     <!-- Exibindo o tooltip se houver uma mensagem de sucesso -->
