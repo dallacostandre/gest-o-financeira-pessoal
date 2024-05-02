@@ -23,8 +23,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <span class="nav-link-text ms-1">Dívidas <span data-toggle="modal" data-target="#modalDetalhes2"><a
-                                href="#"> Ver</a></span></span>
+                    <span class="nav-link-text ms-1" data-toggle="modal" data-target="#modalDetalhes2">Dívidas <span>
                 </a>
             </li>
             <li class="nav-item">
