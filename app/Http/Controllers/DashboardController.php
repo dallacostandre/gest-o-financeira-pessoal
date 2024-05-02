@@ -38,7 +38,7 @@ class DashboardController extends Controller
 
         // Calcula o total em falta diretamente na consulta
         $totalFalta = Transacoes::where('status', '02')
-            ->whereBetween('vencimento', [$dataInicioMes, $dataFimMes])
+            // ->whereBetween('vencimento', [$dataInicioMes, $dataFimMes])
             ->sum('valor');
 
         // Calcula o saldo final usando os totais de entrada e saída

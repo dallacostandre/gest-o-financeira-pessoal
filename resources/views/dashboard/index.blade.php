@@ -58,7 +58,7 @@
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Entrada</p>
+                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Entrada do Mês</p>
                                         <h5 class="font-weight-bolder">
                                             {{ number_format($totalEntrada, 2, ',', '.') }}
                                         </h5>
@@ -83,7 +83,7 @@
                             <div class="row">
                                 <div class="col-8">
                                     <div class="numbers">
-                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Saída</p>
+                                        <p class="text-sm mb-0 text-uppercase font-weight-bold">Saídas do Mês</p>
                                         <h5 class="font-weight-bolder">
                                             {{ number_format($totalSaida, 2, ',', '.') }}
                                         </h5>
