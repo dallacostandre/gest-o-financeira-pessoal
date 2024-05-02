@@ -209,6 +209,13 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
+                                <label for="valor" class="col-sm-2 col-form-label">Valor</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="valor" class="form-control form-control-sm money2"
+                                        required id="valor" value="{{ $transacao->valor ?? '' }}">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
                                 <label for="tipo" class="col-sm-2 col-form-label">Tipo</label>
                                 <div class="col-sm-10">
                                     <select name="tipo" class="form-select" id="tipo" required>
@@ -264,13 +271,7 @@
                                 </div>
                             </div>
 
-                            <div class="row mb-3">
-                                <label for="valor" class="col-sm-2 col-form-label">Valor</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="valor" class="form-control form-control-sm money2"
-                                        required id="valor" value="{{ $transacao->valor ?? '' }}">
-                                </div>
-                            </div>
+
                             <div class="row mb-3 d-flex justify-content-end">
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary">Salvar</button>
