@@ -318,6 +318,7 @@
                                 <li>Mei André - R$ 600,00</li>
                                 <li>Positivo Débora - R$ </li>
                                 <li>Nubank Débora - R$ 3.000,00</li>
+                                <li>IPVA - FordKa</li>
                             </ul>
                         </div>
                         <div class="modal-footer">
